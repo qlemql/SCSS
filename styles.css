@@ -1,0 +1,20 @@
+.box {
+  background: blue;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+/* inline-block 상태에서 가운데 상자를 중앙으로 보내기 */
+.box:nth-child(2) {
+  margin-left: 30px;
+}
+
+/* inline-block 상태에서 마지막 상자만 오른쪽 끝으로 보내기
+(가운데 상자랑 맞춰서 간격을 적당히 줄 것 */
+.box:nth-child(3) {
+  margin-left: 20px;
+}
+
+/* inline-block을 px로 간격 설정하는건 좋지만 화면크기를 줄이거나 늘리면 디자인이 붕괴된다
+이걸 보안하기 위해 flexbox가 나왔다. */
