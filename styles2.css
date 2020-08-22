@@ -1,0 +1,14 @@
+/* display: flex를 해주면 inline-block과 같은 결과를 얻을 수 있다.
+또한 바로 위 부모가 flex container이어야 자식의 위치를 움직일 수 있다.
+flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 있어야 한다.*/
+
+body {
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: peru;
+  color: white;
+}
