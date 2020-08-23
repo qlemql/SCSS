@@ -4,9 +4,15 @@ flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 �
 
 .father {
   display: flex;
+  /* -reverse는 HTML을 바꾸지않고 방향을 역으로 바꾼다. */
+  /* flex-direction: row-reverse; */
   /* Main Axis */
   justify-content: space-around;
-  height: 100vh;
+  /* align-content는  element들의 줄이 바뀌는 line을 다룬다*/
+  align-content: flex-start;
+  height: 200vh;
+  /* flex-wrap의 기본 defalu값은 nowrap이다 */
+  flex-wrap: wrap;
 }
 
 .child {
@@ -26,10 +32,10 @@ flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 �
 } */
 
 /* 기본적인 box order는 0이다 따라서 2번 box가 0 3번 box가 1이므로 2번박스가 3번 위치로 간다. */
-.child:nth-child(1) {
+/* .child:nth-child(1) {
   order: 2;
 }
 
 .child:nth-child(2) {
   order: 3;
-}
+} */
