@@ -4,6 +4,9 @@ flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 �
 
 body {
   display: flex;
+  /* flex-direction default값은 row 
+     flex-direction column에서는 Main Axis가 세로축, Cross Axis가 가로축으로 변경된다.*/
+  flex-direction: column;
   /* Main Axis */
   justify-content: space-around;
   /* Cross Axis */
