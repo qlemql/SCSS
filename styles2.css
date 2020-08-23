@@ -4,6 +4,11 @@ flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 �
 
 body {
   display: flex;
+  /* Main Axis */
+  justify-content: space-around;
+  /* Cross Axis */
+  align-items: center;
+  height: 100vh;
 }
 
 .box {
