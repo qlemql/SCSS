@@ -16,7 +16,8 @@ flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 �
 }
 
 .child {
-  width: 200px;
+  /* flex-basis가 width와 같다고 할 수 있다. */
+  flex-basis: 300px;
   height: 200px;
   background: peru;
   color: white;
