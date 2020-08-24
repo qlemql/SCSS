@@ -39,3 +39,11 @@ flexbox에서 box들의 위치를 옮기고 싶으면 flex container의 안에 �
 .child:nth-child(2) {
   order: 3;
 } */
+
+/* flex-shrink의 기본값은 1이다.
+   flex-grow는 shrink의 반대이며 기본값은 0이다. */
+.child:nth-child(2) {
+  background: #000;
+  /* flex-shrink: 2; */
+  flex-grow: 1;
+}
