@@ -2,7 +2,7 @@
   display: grid;
   gap: 10px;
   /* auto 200px를 설정하게 된다면 모든 공간을 사용한다. */
-  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
   grid-template-rows: repeat(4, 100px);
 }
 
@@ -15,8 +15,7 @@
 
 .content {
   background-color: #3498db;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: first-line / fourth-line;
   grid-row-start: 2;
   grid-row-end: 4;
 }
