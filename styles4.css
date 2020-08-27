@@ -8,9 +8,9 @@
 
 .header {
   background-color: #2ecc71;
-  /* header가 어디서 시작해서 어디서 끝나는지 정할 수 있다. */
-  grid-column-start: 1;
-  grid-column-end: 5;
+  /* header가 어디서 시작해서 어디서 끝나는지 정할 수 있다.
+  grid-column-start,end를 grid-column: start/end;로 간결하게 쓸 수 있다. */
+  grid-column: 1 /-1;
 }
 
 .content {
@@ -29,6 +29,5 @@
 
 .footer {
   background-color: #f39c12;
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column: span 4;
 }
