@@ -5,28 +5,24 @@
        50vh는 내 화면의 50 즉 절반을 말한다.*/
   height: 50vh;
   /* auto 200px를 설정하게 된다면 모든 공간을 사용한다. */
-  grid-template:
-    [header-start] "header header header header" 1fr [header-end]
-    [content-start] "content content content nav" 2fr [content-end]
-    [footer-start] "footer footer footer footer" 1fr [footer-end] / 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* justify-items의 기본값은 stretch이다. */
+  justify-items: stretch;
 }
 
 .header {
   background-color: #2ecc71;
-  grid-area: header;
 }
 
 .content {
   background-color: #3498db;
-  grid-area: content;
 }
 
 .nav {
   background-color: #8e44ad;
-  grid-area: nav;
 }
 
 .footer {
   background-color: #f39c12;
-  grid-area: footer;
 }
