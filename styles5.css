@@ -1,14 +1,10 @@
 .grid {
   display: grid;
-  gap: 10px;
-  /* fr을 사용하려면 height를 설정해야한다 설정하지 않으면 height가 0이라서 fr이 나오지 않는다.
-       50vh는 내 화면의 50 즉 절반을 말한다.*/
+  gap: 5px;
   height: 50vh;
-  /* auto 200px를 설정하게 된다면 모든 공간을 사용한다. */
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  /* justify-items의 기본값은 stretch이다. */
-  justify-items: stretch;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  justify-content: center;
 }
 
 .header {
