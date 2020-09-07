@@ -1,18 +1,20 @@
 // @import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
 @import "_variables";
-@import "_mixins";
-@import "_buttons";
+@import "_mixin";
 // @import "_elements";
 
-a {
-  @extend %button;
-  text-decoration: none;
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: yellow;
+  }
+  @include responsive("iphone-l") {
+    font-size: 60px;
+  }
+  @include responsive("tablet") {
+    color: green;
+  }
 }
-button {
-  @extend %button;
-  border: none;
-}
-
 // * {
 //   box-sizing: border-box;
 // }
